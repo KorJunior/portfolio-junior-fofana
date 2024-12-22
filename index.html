@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korodjouma Junior</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="resources/tagcanvas.js" type="text/javascript"></script>
+  <script src="resources/iniciarCanvas.js"></script>
+  <link rel="stylesheet" href="styles/index.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="formacion.html">Formacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="sobre_mi.html">Sobre mi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row gx-5 gy-5 my-1 d-flex">
+      <div class="col-12 col-md-4 offset-md-1 d-flex">
+        <div class="d-flex flex-column bg-white text-dark align-items-center justify-content-between rounded-3 w-100">
+          <div class="p-4">
+            <img src="img/foto_personal.png" class="img-fluid rounded mx-auto d-block w-auto" alt="...">
+          </div>
+          <div class="p-2 text-center">Korodjouma Junior Fofana Coulibaly</div>
+          <button type="button" class="btn my-2" onclick="downloadFile()"><span class="text-light">Descargar CV</span></button>
+          <div class="row justify-content-center my-2">
+            <div class="col-3 d-flex justify-content-center">
+              <a href="https://www.instagram.com/juniorf2002/" target="_blank" class="text-black">
+                <i class="bi bi-instagram iconSize"></i>
+              </a>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <a href="https://www.linkedin.com/in/korodjouma-junior-fofana-coulibaly-858b181a7/" target="_blank"
+                class="text-black">
+                <i class="bi bi-linkedin iconSize"></i>
+              </a>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <a href="mailto:junitof2002@gmail.com" class="text-black">
+                <i class="bi bi-envelope iconSize"></i>
+              </a>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <a href="https://github.com/KorJunior" target="_blank" class="text-black">
+                <i class="bi bi-github iconSize"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 d-flex">
+        <div class="p-3 text-center d-block w-100">
+          <h1 class="display-1 fw-bold text-start">
+            <span class="text-white d-block">Backend</span>
+            <span class="text-secondary-emphasis d-block">Developer</span>
+          </h1>
+          <div class="text-justify text-start d-block">
+            <p>
+              Soy un desarrollador de software enfocado en backend, comprometido con crear soluciones tecnológicas
+              eficientes y escalables.<br><br>
+              Me motiva transformar ideas complejas en aplicaciones funcionales que generen
+              impacto real.
+              Valoro la calidad del código, el aprendizaje continuo y el trabajo colaborativo.<br><br>
+              Creo firmemente que la tecnología no solo resuelve problemas, sino que también tiene el poder de abrir
+              nuevas oportunidades y
+              simplificar la vida de las personas.
+            </p>
+
+          </div>
+          <div class="container text-center mt-5">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h2 class="display-3 text-light">+7</h2>
+                <p class="text-light">MESES DE</p>
+                <p class="text-light">EXPERIENCIA LABORAL</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <h2 class="display-3 text-light">+2</h2>
+                <p class="text-light">PROYECTOS</p>
+                <p class="text-light">COMPLETADOS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="display-5 fw-bold text-center ecosistema">
+      <span class="text-white d-block">Mi Ecosistema Tecnológico
+      </span>
+    </h3>
+    <div id="myCanvasContainer" class="d-flex justify-content-center w-100 my-3">
+      <canvas id="myCanvas" width="500" height="500"></canvas>
+    </div>
+    <div id="tags">
+      <a title="Flutter" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/flutter.svg" alt="Flutter Logo">
+      </a>
+      <a title="Dart" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/dart.svg" alt="Dart Logo">
+      </a>
+      <a title="GitHub" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/github-dark.svg" alt="GitHub Logo">
+      </a>
+      <a title="Java" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/java.svg" alt="Java Logo">
+      </a>
+      <a title="Python" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/python.svg" alt="Python Logo">
+      </a>
+      <a title="Docker" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/docker.svg" alt="Docker Logo">
+      </a>
+      <a title="HTML5" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/html5.svg" alt="HTML Logo">
+      </a>
+      <a title="CSS" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/css.svg" alt="CSS Logo">
+      </a>
+      <a title="Bootstrap" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/bootstrap.svg" alt="Bootstrap Logo">
+      </a>
+      <a title="PHP" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/php_dark.svg" alt="PHP Logo">
+      </a>
+      <a title="IntelliJ IDEA" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/intellijidea.svg" alt="IntelliJ IDEA Logo">
+      </a>
+      <a title="Spring" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/spring.svg" alt="Spring Logo">
+      </a>
+      <a title="Jira" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/jira-1.svg" alt="Jira">
+      </a>
+      <a title="VsCode" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/vscode.svg" alt="VsCode">
+      </a>
+      <a title="Visual Studio" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/visual-studio.svg" alt="Visual Studio">
+      </a>
+      <a title="Visual Studio" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/visual-studio.svg" alt="Visual Studio">
+      </a>
+      <a title="Android" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/android-icon.svg" alt="Android">
+      </a>
+      <a title="Kotlin" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/kotlin.svg" alt="Kotlin">
+      </a>
+      <a title="Firebase" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/firebase.svg" alt="Firebase">
+      </a>
+      <a title="MogoDB" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/mongodb.svg" alt="MogoDB">
+      </a>
+      <a title="GitLab" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/gitlab.svg" alt="GitLab">
+      </a>
+      <a title="Git" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/git.svg" alt="Git">
+      </a>
+      <a title="PostgreSQL" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/postgresql.svg" alt="PostgreSQL">
+      </a>
+      <a title="Postman" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/postman.svg" alt="Postman">
+      </a>
+      <a title="Supabase" class="img-fluid" onclick="return false">
+        <img src="img/svg/canva/supabase.svg" alt="Supabase">
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Inicio</a></li>
+        <li class="nav-item"><a href="formacion.html" class="nav-link px-2 text-light">Formacion</a>
+        </li>
+        <li class="nav-item"><a href="proyectos.html" class="nav-link px-2 text-light">Proyectos</a></li>
+        <li class="nav-item"><a href="sobre_mi.html" class="nav-link px-2 text-light">Sobre mi</a></li>
+      </ul>
+      <p class="text-center text-light">Copyright &copy; Korodjouma Junior Fofana Coulibaly 2024 All rights Reserved
+      </p>
+    </footer>
+  </div>
+  <script>
+    function downloadFile() {
+      const link = document.createElement('a');
+      link.href = 'resources/CV Junior.pdf';
+      link.download = 'KorodjoumaJuniorFofana_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+
+</html>

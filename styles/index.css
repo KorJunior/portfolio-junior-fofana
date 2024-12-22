@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../resources/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsH1';
+    src: url('../resources/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsItalic';
+    src: url('../resources/fonts/Poppins-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'PoppinsH1';
+}
+
+.navbar {
+    font-family: 'Poppins';
+}
+
+.iconSize {
+    font-size: 30px;
+}
+
+
+body {
+    color: #817978;
+    background-color: #151312;
+    font-family: 'Poppins';
+}
+
+.btn{
+    background-color:#2E4058;
+}
+
+.btn:hover{
+    background-color:#2E4058;
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+
+.btn:active {
+    background-color: #2E4058 !important;
+}
+
+
+.ecosistema{
+    margin-top: 180px;
+}
+
+#myCanvasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#myCanvas {
+    width: 50%;
+    height: auto;
+}
+
+#tags img {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}

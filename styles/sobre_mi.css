@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../resources/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsH1';
+    src: url('../resources/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsItalic';
+    src: url('../resources/fonts/Poppins-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'PoppinsH1';
+}
+
+.navbar {
+    font-family: 'Poppins';
+}
+
+body {
+    color: #817978;
+    background-color: #151312;
+    font-family: 'Poppins';
+}
+
+.hobby-container {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hobby-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 15px white;
+}
+
+.bi {
+    font-size: 35px;
+}
+
+.event-container {
+    height: 100%;
+}
+
+
